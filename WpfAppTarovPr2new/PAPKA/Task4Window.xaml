@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfAppTarovPr2.PAPKA.Task4Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Task 4" Height="300" Width="400">
+    <StackPanel Margin="10">
+        <TextBlock Text="Задача4: Найти два элемента массива, сумма которых наиболее близка к максимуму массива, и поменять их местами." TextWrapping="Wrap" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Введите массив (через запятую):"/>
+        <TextBox x:Name="InputArrayTextBox" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Результат:"/>
+        <TextBox x:Name="ResultTextBox" IsReadOnly="True" Margin="0,0,0,10"/>
+
+        <Button Content="Запустить расчет" Click="CalculateButton_Click"/>
+    </StackPanel>
+</Window>
