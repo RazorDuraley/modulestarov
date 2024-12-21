@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfAppTarovPr2.PAPKA.Task5Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Task 5" Height="400" Width="600">
+    <StackPanel Margin="10">
+        <TextBlock Text="Введите количество строк (N):"/>
+        <TextBox x:Name="RowsTextBox" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Введите количество столбцов (M):"/>
+        <TextBox x:Name="ColumnsTextBox" Margin="0,0,0,10"/>
+
+        <Button Content="Сгенерировать массив" Click="GenerateButton_Click" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Сгенерированный массив:"/>
+        <DataGrid x:Name="GeneratedArrayDataGrid" AutoGenerateColumns="True" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Отсортированный по возрастанию массив:"/>
+        <DataGrid x:Name="SortedAscendingDataGrid" AutoGenerateColumns="True" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Отсортированный по убыванию массив:"/>
+        <DataGrid x:Name="SortedDescendingDataGrid" AutoGenerateColumns="True" Margin="0,0,0,10"/>
+
+        <TextBlock x:Name="MinMaxTextBlock" Margin="0,10,0,0"/>
+    </StackPanel>
+</Window>
